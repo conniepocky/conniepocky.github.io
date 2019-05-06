@@ -38,7 +38,9 @@
      [:div {:class "col-md-3"}
       [about-cards "My YouTube" "" "https://media.licdn.com/dms/image/C560BAQFWOfDVm7nHeg/company-logo_200_200/0?e=2159024400&v=beta&t=L7yzPfsyYeZUjkJc1Abfwbg-Nx710fAvwEYbf02LIEE" "https://www.youtube.com/channel/UCmdaAi8utcD7y951MfyhSbQ/featured?view_as=subscriber"]]
      [:div {:class "col-md-3"}
-      [about-cards "My Twitch" "" "https://www-cdn.jtvnw.net/images/twitch_logo3.jpg" "https://www.twitch.tv/waffles193"]]]
+      [about-cards "My Twitch" ""  "https://www-cdn.jtvnw.net/images/twitch_logo3.jpg" "https://www.twitch.tv/waffles193"]]
+     [:div {:class "col-md-3"}
+      [about-cards "My Patreon" "" "https://c5.patreon.com/external/logo/downloads_logomark_color_on_white@2x.png" "https://www.patreon.com/conniewaffles"]]]
    [:p {:class "centered-text"} "Made by Connie"]])
 
 (reagent/render-component [hello-world]
