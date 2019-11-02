@@ -1,0 +1,96 @@
+<style>
+
+body {
+	background-image: url("https://ak3.picdn.net/shutterstock/videos/1022864203/thumb/1.jpg");
+	color: white;
+	text-align: center;
+	font-family: sans-serif;
+}
+
+#title:hover span {display:none}
+#title:hover:before {content:"Hello!"}
+
+</style>
+
+<html>
+	<h1 id="title"><span>01001000 01100101 01101100 01101100 01101111 00100001</span></h1>
+
+	<hr>
+
+	<h2>What is a binary number?</h2>
+
+	<p>Binary is a number system that only uses two digits, 0 and 1. Computers use binary, so they use only zeros and ones to perform calculations and store data!</p>
+
+	<hr>
+
+	<div id="hideme">
+
+		<img src="https://farm6.staticflickr.com/5690/20826912291_fff07c4c22.jpg">
+
+	</div>
+
+	<br>
+
+	<button onclick="showHideDiv('hideme')">Click me to show/hide the images</button>
+
+	<hr>
+
+	<h1>Binary Numbers Game</h1>
+
+	<p>The game will give you a number and you have to convert it to binary.</p>
+	
+	<p id="number"></p>
+
+	<input type="text" name="FirstName" id="input" value="Your Answer">
+
+	<button id="start-button" onclick="start()">Press me to start!</button>
+
+</html>
+
+
+<script>
+
+let n;
+
+let solution;
+
+function showHideDiv(ele) {
+			var srcElement = document.getElementById(ele);
+			if (srcElement != null) {
+					if (srcElement.style.display == "block") {
+						srcElement.style.display = 'none';
+					}
+					else {
+						srcElement.style.display = 'block';
+					}
+					return false;
+			}
+}
+
+
+function start() {
+	var input = document.getElementById("input").value
+
+	//alert(solution)
+
+	if (input == solution) {
+                alert("Correct!")
+	} else if (input == "Your Answer") {
+		//pass
+	} else {
+                alert("Incorrect!")
+        }
+
+	var text = document.getElementById("number")
+	var button = document.getElementById("start-button").innerHTML = "Submit"
+
+	n = Math.floor(Math.random() * 25)
+	solution = n.toString(2);
+
+	text.innerHTML = n
+
+
+}
+
+</script>
+
