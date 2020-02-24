@@ -1,10 +1,31 @@
+/* some style */
 
-.centered-text {
+
+.card, .tile, .message {
+	padding: 25px;
+}
+
+.title-very-big {
 	text-align: center;
+	font-size: 100px;
+}
+
+.subtitle-big {
+	text-align: center;
+	font-size: 65px;
+}
+
+.white-text {
+	color: white;
 }
 
 
-.center-cards {
-	position: relative;
-	padding: 10px;
+.hero, .footer {
+	background-origin: border-box;
+	background-repeat: no-repeat;
+	background-image: url("https://images.unsplash.com/photo-1545112719-ce81d7de0b71?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2011&q=80");
+}
+
+.red-text {
+	color: #E55050;
 }

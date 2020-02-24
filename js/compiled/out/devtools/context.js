@@ -1,4 +1,4 @@
-// Compiled by ClojureScript 1.10.238 {}
+// Compiled by ClojureScript 1.10.520 {}
 goog.provide('devtools.context');
 goog.require('cljs.core');
 devtools.context.get_root = (function devtools$context$get_root(){
@@ -8,4 +8,4 @@ devtools.context.get_console = (function devtools$context$get_console(){
 return devtools.context.get_root.call(null).console;
 });
 
-//# sourceMappingURL=context.js.map?rel=1564480786054
+//# sourceMappingURL=context.js.map?rel=1582568608686
