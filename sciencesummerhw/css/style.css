@@ -1,0 +1,49 @@
+body {
+	font-family: sans-serif;
+	padding: 20px;
+	background-image: url("https://d2cbg94ubxgsnp.cloudfront.net/Pictures/2000x2000fit/0/8/1/135081_Index-and-hero---A-picture-is-worth-a-thousand-word.jpg");
+}
+
+h2 {
+	text-align: center;
+	color: #590DB4;
+	background-color: white;
+}	
+
+#t {
+	position: fixed;
+	top: 30%;
+	left: 50%;
+	margin-top: -100px;
+	margin-left: -200px;
+}
+
+#f {
+	position: fixed;
+	top: 30%;
+	left: 60%;
+	margin-top: -100px;
+	margin-left: -200px;
+}
+
+h1 {
+	text-size: 30px;
+	color: #590DB4;
+	background-color: white;
+
+	text-align: center;
+	position: fixed;
+    	top: 50%;
+    	left: 50%;
+    	margin-top: -100px;
+    	margin-left: -200px;
+}
+
+#question {
+	position: fixed;
+   	top: 60%;
+    	left: 50%;
+    	margin-top: -100px;
+    	margin-left: -200px;
+
+}

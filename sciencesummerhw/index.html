@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+	<html>
+		<head>
+			<title>Science 	Homework</title>
+			<link rel="stylesheet" type="text/css" href="css/style.css">
+		</head>
+		<body>
+
+			<h1 id="header">Press the button to get a question! 😁</h1>
+
+			<button onclick="t()" id="t"><h3>True</h3></button>
+
+			<button onclick="f()" id="f"><h3>False</h3></button>
+
+			<br>
+
+			<button onclick="question()" id="question"><h3>Question<h3></button>
+
+			<h2>My year 7 science quiz, by Connie :)</h2>
+
+			<script>
+
+				var questions = ["True or False, Animal and Plant Cells both have a nucleus", "True or false, bones are made of tissue", "True or False, the pH scale goes from 1-15", "True or False, not all matter is made from atoms", "True or false, energy can be transfered in water", "True or false, sound travels fastest through air"]
+
+				var answers = [true, true, false, false, true, false]
+				
+				var chosenQuestion = ""
+
+				function question() {
+					chosenQuestion = questions[Math.floor(Math.random()*questions.length)];
+					document.getElementById("header").innerHTML = chosenQuestion
+				}
+
+				function t() {
+					if (answers[questions.indexOf(chosenQuestion)] == true) {
+						alert("Correct!");
+					} else {
+						alert("Incorrect!");
+					}
+				}
+
+				function f() {
+					if (answers[questions.indexOf(chosenQuestion)] == false) {
+						alert("Correct!");
+					} else {
+						alert("Incorrect!");
+					}
+				}
+
+			</script>
+		</body>
+	</html>
+
