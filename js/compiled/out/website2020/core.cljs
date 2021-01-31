@@ -24,23 +24,30 @@
         [:br]
         [:br]]]
     
-    [:h2 {:class "subtitle-big red-text"} "MY PROJECTS"]
+    [:h2 {:class "subtitle-big red-text"} "PROGRAMMING LANGUAGES I KNOW"]
     
-[:div {:class "tile is-ancestor"}
- [:div {:class "tile is-vertical is-8"}
-  [:div {:class "tile"}
-   [:div {:class "tile is-parent is-vertical"}
-    [:article {:class "tile is-child notification is-danger"}
-     [:p {:class "title"} "Emoji Shortcuts"]
-     [:p {:class "subtitle"} "An NodeJS app, that lets you copy and paste emojis and ASCII wherever you like!"]"\t" 
-     [:p "View on " 
-      [:a {:href "https://github.com/conniepocky/Emoji-Shortcuts"} "GitHub"]]]
-    [:article {:class "tile is-child notification is-dark"}
-     [:p {:class "title"} "K-Dash"]
-     [:p {:class "subtitle"} "A website made for K-Pop fans to get lots of info on different groups!"]
-     [:p "View on " 
-      [:a {:href "https://conniepocky.github.io/k-dash/"} "the Website"]]]]]]]
-
+[:div {:class "carousel"} 
+ [:div {:class "item-1"}  
+  [:h2 {:id "carousel-item-text"} "Javascript"]
+  [:p {:id "age-text"} "Learnt age 8"]]
+ [:div {:class "item-2"}  
+  [:h2 {:id "carousel-item-text"} "Python"]
+  [:p {:id "age-text"} "Learnt age 6"]]
+ [:div {:class "item-3"} 
+  [:h2 {:id "carousel-item-text"} "Clojure"]
+  [:p {:id "age-text"} "Learnt age 9"]]
+ [:div {:class "item-4"} 
+  [:h2 {:id "carousel-item-text"} "HTML and CSS"]
+  [:p {:id "age-text"} "Learnt age 8"]]
+ [:div {:class "item-5"} 
+  [:h2 {:id "carousel-item-text"} "Racket"]
+  [:p {:id "age-text"} "Learnt age 10"]]
+ [:div {:class "item-6"}  
+  [:h2 {:id "carousel-item-text"} "C"]
+  [:p {:id "age-text"} "Learnt age 11"]] 
+ [:div {:class "item-7"} 
+  [:h2 {:id "carousel-item-text"} "Scheme"]
+  [:p {:id "age-text"} "Learnt age 12"]]]
    
     [:h2 {:class "subtitle-big red-text"} "WHERE YOU CAN FIND ME"]
 
@@ -55,7 +62,11 @@
             [:article {:class "tile is-child notification is-warning"}
               [:p {:class "title"} "CodePen"]
               [:p {:class "subtitle"}
-                 [:a {:href "https://codepen.io/waffles19/"} "Waffles19"]]]]
+                  [:a {:href "https://codepen.io/waffles19/"} "Waffles19"]]]
+            [:article {:class "title is-child notification is-dark"}
+              [:p {:class "title"} "GitHub"]
+              [:p {:class "subtitle"}
+                  [:a {:href "https://github.com/conniepocky"} "Conniepocky"]]]]
           [:div {:class "tile is-parent"}
             [:article {:class "tile is-child notification is-info"}
               [:p {:class "title"} "Youtube"]
@@ -67,7 +78,7 @@
     [:h2 {:class "subtitle-big red-text"} "ABOUT ME"]
     
     [:article {:class "message is-link"}
-        [:div {:class "message-body"} "I'm a self taught, 11 year old developer 😀 I started learning to code when I was 6 with Python, and then moved on to JavaScript, Swift, Clojure and Vim 🙃 Aside from coding I enjoy playing Overwatch, Sims, Roblox and Minecraft 🎮 I also like Harry Potter, Waffles, K-Pop (mostly SHINee) and Anime 😊"]]
+        [:div {:class "message-body"} "I'm a self taught, 12 year old developer 😀 I started learning to code when I was 6 with Python, and then moved on to JavaScript, Swift, Clojure and Vim 🙃 Aside from coding I enjoy playing Overwatch, Sims, Roblox and Minecraft 🎮 I also like Harry Potter, Waffles, K-Pop (mostly SHINee) and Anime 😊"]]
     
 
     [:footer {:class "footer"}

@@ -19,6 +19,17 @@
 	color: white;
 }
 
+#carousel-item-text {
+	font-size: 45px;
+}
+
+#age-text {
+
+}
+
+.carousel {
+	
+}
 
 .hero, .footer {
 	background-origin: border-box;
