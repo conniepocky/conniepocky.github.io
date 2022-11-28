@@ -1,42 +1,181 @@
-/* some style */
+html, body {
+    font-family: 'Nunito';
+    background-color: #202424;
+    scroll-behavior: smooth;
 
-
-.card, .tile, .message {
-	padding: 25px;
+    margin: 0;
+    height:100%
 }
 
-.title-very-big {
-	text-align: center;
-	font-size: 100px;
+section {
+  display: block;
+  height:100%;
+  padding: 60px;
+  padding-left: 120px;
 }
 
-.subtitle-big {
-	text-align: center;
-	font-size: 65px;
+/* nav bar */
+
+#navBar {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+  
+#navbarli {
+  float: right;
+}
+  
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 70px;
+  text-decoration-color: #45B5D1;
+  font-size: 30px;
+}
+  
+li a:hover {
+  background-color: #111;
 }
 
-.white-text {
-	color: white;
+/* home css */
+
+#home {
+  line-height: 0.8em;
+  background-color: #202424;
 }
 
-#carousel-item-text {
-	font-size: 45px;
+.titleText {
+  font-family: 'Nunito';
+  font-size: 100px;
+  color: #45B5D1;
+
+  padding-left:100px;
+  padding-top:100px;
 }
 
-#age-text {
-
+.subtitleText {
+  font-size: 40px;
+  color: white;
+  padding-left:100px;
 }
 
-.carousel {
-	
+.icons {
+  padding-left: 100px;
 }
 
-.hero, .footer {
-	background-origin: border-box;
-	background-repeat: no-repeat;
-	background-image: url("https://images.unsplash.com/photo-1545112719-ce81d7de0b71?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2011&q=80");
+.popup {
+position: relative;
+display: inline-block;
+cursor: pointer;
+user-select: none;
 }
 
-.red-text {
-	color: #E55050;
+.popup .popuptext {
+visibility: hidden;
+width: 160px;
+background-color: #555;
+color: #fff;
+text-align: center;
+border-radius: 6px;
+padding: 8px 0;
+position: absolute;
+z-index: 1;
+bottom: 125%;
+left: 50%;
+margin-left: -80px;
+}
+
+.popup:hover .popuptext {
+visibility: visible;
+opacity: 1;
+}
+
+.cursor h1 {
+  display: flex;
+  align-items: center;
+  gap: 2px;
+}
+
+.cursor h1::after {
+  content: "";
+  width: 50px;
+  height: 90px;
+  background: #3897AF;
+  display: inline-block;
+
+  animation: cursor-blink 2s steps(2) infinite;
+  
+}
+
+@keyframes cursor-blink {
+  0% {
+    opacity: 0;
+  }
+}
+
+/* about css */
+
+#about {
+  background-color: white;
+  color: black;
+}
+
+u {
+  text-decoration-color: #45B5D1;
+}
+
+#aboutTitle {
+  font-size: 50px;
+}
+
+/* links css */
+
+#links {
+  background-image: url("../images/computer.jpg");
+  background-size: cover;
+}
+
+#linksTitle {
+  font-size: 50px;
+  color: white;
+}
+
+.card {
+  background-color: #101212;
+  text-align: center;
+  color: white;
+  float: left;
+  width: calc(25% - 20px);
+  padding: 10px;
+  border-radius: 10px;
+  margin: 10px;
+  height: 200px;
+}
+
+@media screen and (max-width: 600px) {
+  .card {
+     width: 100%;
+  }
+}
+
+#cardLink {
+  color:#45B5D1;
+  font-size: 20px;
+}
+
+h4 {
+  font-weight: bold;
+  font-size:30px;
+}
+
+p {
+  text-align: center;
+  color: white;
+}
+
+b {
+  color:#45B5D1;
 }
