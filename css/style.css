@@ -10,8 +10,9 @@ html, body {
 section {
   display: inline-block;
   padding: 10%;
+  margin: auto;
 
-  height: 75vh;
+  height: 100%;
 }
 
 @media screen and (max-width: 667px) {
@@ -35,7 +36,7 @@ section {
 li a {
   display: block;
   color: white;
-  padding: 14px;
+  padding: 15px;
   text-decoration-color: #45B5D1;
   font-size: 30px;
 }
@@ -45,6 +46,10 @@ li a:hover {
 }
 
 /* home css */
+
+#home {
+  height: 65vh;
+}
 
 .titleText {
   font-family: 'Nunito';
@@ -111,6 +116,7 @@ li a:hover {
 #about {
   background-color: white;
   color: black;
+
 }
 
 u {
@@ -126,6 +132,7 @@ u {
 #links {
   background-image: url("../images/computer.jpg");
   background-size: cover;
+
   width: 100%;
 }
 
@@ -148,7 +155,7 @@ u {
 
 @media screen and (max-width: 600px) {
   .card {
-     width: 100%;
+     width: 70%;
   }
 }
 
