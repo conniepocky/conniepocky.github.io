@@ -11,6 +11,7 @@ section {
   display: inline-block;
   padding: 10%;
 
+  height: 75vh;
 }
 
 @media screen and (max-width: 667px) {
@@ -44,10 +45,6 @@ li a:hover {
 }
 
 /* home css */
-
-#home {
-  height: 60vh;
-}
 
 .titleText {
   font-family: 'Nunito';
