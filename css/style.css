@@ -2,16 +2,31 @@ html, body {
     font-family: 'Nunito';
     background-color: #202424;
     scroll-behavior: smooth;
-
-    margin: 0;
-    height:100%
+    overflow-x: hidden !important;
+    margin-left:auto;
+    margin-right:auto;
 }
 
+/* #wrapper {
+  margin-left:auto;
+  margin-right:auto;
+  width:960px;
+} */
+
 section {
-  display: block;
+  display: inline-block;
   height:100%;
-  padding: 60px;
-  padding-left: 120px;
+  padding: 10%;
+}
+
+@media screen and (max-width: 667px) {
+  body {
+      overflow-x: hidden !important;
+  }
+  .container {
+      max-width: 100% !important;
+      overflow-x: hidden !important;
+  }
 }
 
 /* nav bar */
@@ -43,7 +58,6 @@ li a:hover {
 /* home css */
 
 #home {
-  line-height: 0.8em;
   background-color: #202424;
 }
 
@@ -52,51 +66,43 @@ li a:hover {
   font-size: 100px;
   color: #45B5D1;
 
-  padding-left:100px;
-  padding-top:100px;
 }
 
 .subtitleText {
   font-size: 40px;
   color: white;
-  padding-left:100px;
-}
-
-.icons {
-  padding-left: 100px;
 }
 
 .popup {
-position: relative;
-display: inline-block;
-cursor: pointer;
-user-select: none;
+  position: relative;
+  display: inline-block;
+  cursor: pointer;
+  user-select: none;
 }
 
 .popup .popuptext {
-visibility: hidden;
-width: 160px;
-background-color: #555;
-color: #fff;
-text-align: center;
-border-radius: 6px;
-padding: 8px 0;
-position: absolute;
-z-index: 1;
-bottom: 125%;
-left: 50%;
-margin-left: -80px;
+  visibility: hidden;
+  width: 160px;
+  background-color: #555;
+  color: #fff;
+  text-align: center;
+  border-radius: 6px;
+  padding: 8px 0;
+  position: absolute;
+  z-index: 1;
+  bottom: 125%;
+  left: 50%;
+  margin-left: -80px;
 }
 
 .popup:hover .popuptext {
-visibility: visible;
-opacity: 1;
+  visibility: visible;
+  opacity: 1;
 }
 
 .cursor h1 {
-  display: flex;
+  display: inline;
   align-items: center;
-  gap: 2px;
 }
 
 .cursor h1::after {
@@ -136,6 +142,7 @@ u {
 #links {
   background-image: url("../images/computer.jpg");
   background-size: cover;
+  width: 100%;
 }
 
 #linksTitle {
