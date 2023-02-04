@@ -34,7 +34,6 @@ section {
 #navBar {
   list-style-type: none;
   margin: 0;
-  padding: 0;
   overflow: hidden;
 }
   
@@ -45,8 +44,7 @@ section {
 li a {
   display: block;
   color: white;
-  text-align: center;
-  padding: 14px 70px;
+  padding: 14px;
   text-decoration-color: #45B5D1;
   font-size: 30px;
 }
