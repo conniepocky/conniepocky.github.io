@@ -59,6 +59,7 @@ li a:hover {
 
 #home {
   background-color: #202424;
+  height:max-content;
 }
 
 .titleText {
