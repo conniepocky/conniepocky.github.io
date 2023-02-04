@@ -13,114 +13,111 @@
     </head>
     <body>
 
-        <div id= "wrapper">
-                <ul id="navBar">
-                    <!-- <li id="navbarli"><a href="#blog">blog</a></li> --> 
-                    <li id="navbarli"><a href="#links">links</a></li>
-                    <li id="navbarli"><a href="#about">about</a></li>
-                    <li id="navbarli"><a class="active" href="#home">home</a></li>
-                </ul>
-        
-                <section id="home">
-                    <span class="cursor">
-                        <h1 class="titleText">Hello World</h1>
-                    </span>
-            
-                    <h2 class="subtitleText">I'm Connie - Software Developer</h2>
-            
-                    <div class="icons">
-                        <a href="https://github.com/conniepocky"><img src="images/icons8-github-50.png"></a>
-            
-                        <a href="https://twitter.com/conniecoding"><img src="images/icons8-twitter-50.png"></a>
-            
-                        <a href="https://connie19.itch.io/"><img src="images/icons8-itch-io-50.png"></a>
-            
-                        <div class="popup" onclick="copyToClipboard()" onmouseout="outFunc()">
-                            <span class="popuptext" id="myPopup">Copy to clipboard</span>
-                            <img src="images/icons8-mail-50.png" onclick="copyToClipboard()">
-                        </div>
+        <ul id="navBar">
+            <li id="navbarli"><a href="#links">links</a></li>
+            <li id="navbarli"><a href="#about">about</a></li>
+            <li id="navbarli"><a class="active" href="">home</a></li>
+        </ul>
+
+        <section id="home">
+            <span class="cursor">
+                <h1 class="titleText">Hello World</h1>
+            </span>
+    
+            <h2 class="subtitleText">I'm Connie - Software Developer</h2>
+    
+            <div class="icons">
+                <a href="https://github.com/conniepocky"><img src="images/icons8-github-50.png"></a>
+    
+                <a href="https://twitter.com/conniecoding"><img src="images/icons8-twitter-50.png"></a>
+    
+                <a href="https://connie19.itch.io/"><img src="images/icons8-itch-io-50.png"></a>
+    
+                <div class="popup" onclick="copyToClipboard()" onmouseout="outFunc()">
+                    <span class="popuptext" id="myPopup">Copy to clipboard</span>
+                    <img src="images/icons8-mail-50.png" onclick="copyToClipboard()">
+                </div>
+            </div>
+        </section>
+
+        <section id="about">
+            <h1 id="aboutTitle">About <u>Me</u></h1>
+
+            <h3>Hi! My name is Connie, I'm a 14 year old developer, I started learning to code when I was 6 years old, since then I have learnt several programming languages and built numerous apps, programs, games, websites and more. I also completed the Harvard CS50 course. Aside from programming I also love cats, music, gaming and Harry Potter :-)</h3>
+
+            <h2><u>Languages I use</u></h2>
+
+            <ul>
+                <li>Python</li>
+                <li>C#</li>
+                <li>HTML</li>
+                <li>CSS</li>
+                <li>Javascript</li>
+                <li>Swift</li>
+                <li>Clojure</li>
+            </ul>
+
+            <h2><u>Key Skills</u></h2>
+
+            <ul>
+                <li>Unity</li>
+                <li>Blender</li>
+                <li>Processing</li>
+                <li>Xcode</li>
+                <li>Vim</li>
+            </ul>
+
+        </section>
+
+        <section id="links">
+            <h1 id="linksTitle"><u>Links</u></h1>
+
+            <div id="cards">
+                <div class="card">
+                    <div class="container">
+                    <h4>Github</h4>
+                    <a id="cardLink" href="https://github.com/conniepocky">conniepocky</a>
                     </div>
-                </section>
-        
-                <section id="about">
-                    <h1 id="aboutTitle">About <u>Me</u></h1>
-        
-                    <h3>Hi! My name is Connie, I'm a 14 year old developer, I started learning to code when I was 6 years old, since then I have learnt several programming languages and built numerous apps, programs, games, websites and more. I also completed the Harvard CS50 course. Aside from programming I also love cats, music, gaming and Harry Potter :-)</h3>
-        
-                    <h2><u>Languages I use</u></h2>
-        
-                    <ul>
-                        <li>Python</li>
-                        <li>C#</li>
-                        <li>HTML</li>
-                        <li>CSS</li>
-                        <li>Javascript</li>
-                        <li>Swift</li>
-                        <li>Clojure</li>
-                    </ul>
-        
-                    <h2><u>Key Skills</u></h2>
-        
-                    <ul>
-                        <li>Unity</li>
-                        <li>Blender</li>
-                        <li>Processing</li>
-                        <li>Xcode</li>
-                        <li>Vim</li>
-                    </ul>
-        
-                </section>
-        
-                <section id="links">
-                    <h1 id="linksTitle"><u>Links</u></h1>
-        
-                    <div id="cards">
-                        <div class="card">
-                            <div class="container">
-                            <h4>Github</h4>
-                            <a id="cardLink" href="https://github.com/conniepocky">conniepocky</a>
-                            </div>
-                        </div>
-            
-                        <div class="card">
-                            <div class="container">
-                            <h4>Twitter</h4>
-                            <a id="cardLink" href="https://twitter.com/conniecoding">conniecoding</a>
-                            </div>
-                        </div>
-        
-                        <div class="card">
-                            <div class="container">
-                            <h4>Codewars</h4>
-                            <a id="cardLink" href="https://www.codewars.com/users/waffles19">waffles19</a>
-                            </div>
-                        </div>
-                        <div class="card">
-                            <div class="container">
-                            <h4>itch.io</h4>
-                            <a id="cardLink" href="https://connie19.itch.io/">connie19</a>
-                            </div>
-                        </div>
-        
-                        <div class="card">
-                            <div class="container">
-                            <h4>Twitch</h4>
-                            <a id="cardLink" href="https://www.twitch.tv/waffles193">waffles193</a>
-                            </div>
-                        </div>
-                        <div class="card">
-                            <div class="container">
-                            <h4>Codepen</h4>
-                            <a id="cardLink" href="https://codepen.io/waffles19">waffles19</a>
-                            </div>
-                        </div>
+                </div>
+    
+                <div class="card">
+                    <div class="container">
+                    <h4>Twitter</h4>
+                    <a id="cardLink" href="https://twitter.com/conniecoding">conniecoding</a>
                     </div>
-                </section>
-        
-                <br>
-        
-                <p>Made by <b>Connie</b> 😊</p>
-        </div>
+                </div>
+
+                <div class="card">
+                    <div class="container">
+                    <h4>Codewars</h4>
+                    <a id="cardLink" href="https://www.codewars.com/users/waffles19">waffles19</a>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="container">
+                    <h4>itch.io</h4>
+                    <a id="cardLink" href="https://connie19.itch.io/">connie19</a>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div class="container">
+                    <h4>Twitch</h4>
+                    <a id="cardLink" href="https://www.twitch.tv/waffles193">waffles193</a>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="container">
+                    <h4>Codepen</h4>
+                    <a id="cardLink" href="https://codepen.io/waffles19">waffles19</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <br>
+
+        <p>Made by <b>Connie</b> 😊</p>
 
     </body>
 </html>
