@@ -158,6 +158,18 @@ u {
   }
 }
 
+li .vimhover {
+  display: none;
+}
+
+li:hover .vim {
+  display: none;
+}
+
+li:hover .vimhover {
+  display: inline;
+}
+
 #cardLink {
   color:#45B5D1;
   font-size: 20px;
