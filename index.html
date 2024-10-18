@@ -14,7 +14,7 @@
     <body>
 
         <ul id="navBar">
-            <li id="navbarli"><a href="#links">links</a></li>
+            <li id="navbarli"><a href="#portfolio">portfolio</a></li>
             <li id="navbarli"><a href="#about">about</a></li>
             <li id="navbarli"><a class="active" href="">home</a></li>
         </ul>
@@ -73,49 +73,58 @@
 
         </section>
 
-        <section id="links">
-            <h1 id="linksTitle"><u>Links</u></h1>
+        <section id="portfolio">
+            <h1 id="portfolioTitle"><u>Portfolio</u></h1>
 
-            <div id="cards">
-                <div class="card">
-                    <div class="container">
-                    <h4>Github</h4>
-                    <a id="cardLink" href="https://github.com/conniepocky">conniepocky</a>
-                    </div>
-                </div>
-    
-                <div class="card">
-                    <div class="container">
-                    <h4>X</h4>
-                    <a id="cardLink" href="https://x.com/connie_coding">connie_coding</a>
-                    </div>
-                </div>
+            <div class="slideshow-container">
 
-                <div class="card">
-                    <div class="container">
-                    <h4>Codewars</h4>
-                    <a id="cardLink" href="https://www.codewars.com/users/waffles19">waffles19</a>
-                    </div>
-                </div>
-                <div class="card">
-                    <div class="container">
-                    <h4>Stackoverflow</h4>
-                    <a id="cardLink" href="https://stackoverflow.com/users/10118863/connie">Connie</a>
-                    </div>
-                </div>
+                <div class="slide fade" style="display: flex; justify-content: center; align-items: center;">
+                    <div class="slide_content">
+                        <div class="left">
+                            <h1 style="color: white; padding: 20px;">Murd<span style="border-bottom: 2px solid #45B5D1;">er At The H</span>ouse</h1>
+                            <div class="zoom"><img src="images/murderathouselogo.jpg" style="width:80%;"></div>
+                        </div>
+                        <div class="right">
+                            <p style="padding: 20px;">
+                                In July 2023 I published my first game on steam - Murder At The House. I designed all the graphics myself and programmed it 
+                                entirely in C# using Unity.
+                            </p>
+                            <hr>
+                            <p style="padding: 20px;">Murder At The House is an indie, social-deducation, pixel, murder mystery game. 11 people are trapped in an old abandoned house together, 8 are innocent, one is a detective and the other is the murderer. You, either the detective or an innocent, must interrogate all the suspects and find clues littered around the house till you think you know who the murderer is. However, if you take too long, more innocents may die..
+                            </p>
 
-                <div class="card">
-                    <div class="container">
-                    <h4>Steam Game</h4>
-                    <a id="cardLink" href="https://store.steampowered.com/app/2416630/Murder_At_The_House/">Murder At The House</a>
+                            <div style="padding: 20px; display: flex; justify-content: center; align-items: center;">
+                                <a class="portfolio-btn" href="https://store.steampowered.com/app/2416630/Murder_At_The_House/">Download Here</a>
+                            </div>
+                        </div>
+                        
                     </div>
+                    <div class="text">1/3</div>
                 </div>
-                <div class="card">
-                    <div class="container">
-                    <h4>Leetcode</h4>
-                    <a id="cardLink" href="https://leetcode.com/u/conniepocky/">conniepocky</a>
+                
+                <div class="slide fade" style="display: none">
+                    <div class="slide_content">
+                        <div class="left">
+                            <h1 style="color: white; padding: 20px;"><span style="border-bottom: 2px solid #45B5D1;">Blog</span></h1>
+                            <div class="zoom"><img width="200" height="200" src="images/blog.png"/></div>
+                        </div>
+                        <div class="right">
+                            <p style="padding:20px">
+                                Coming soon! I am working on a blog to post computer science and maths related articles as well as general updates on my programming journey! :)
+                            </p>
+                        </div>
                     </div>
+                  <div class="text">2/3</div>
                 </div>
+                
+                <!-- <div class="slide fade" style="display: none">
+                  <img src="img_mountains_wide.jpg" style="width:100%">
+                  <div class="text">3/3</div>
+                </div> -->
+                
+                <a class="prev" onclick="plusSlides(-1)">❮</a>
+                <a class="next" onclick="plusSlides(1)">❯</a>
+                
             </div>
         </section>
 
