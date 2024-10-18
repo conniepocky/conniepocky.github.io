@@ -23,7 +23,7 @@ hr {
   border: none;
 }
 
-@media screen and (max-width: 667px) {
+@media screen and (max-width: 980px) {
   body {
       overflow-x: hidden !important;
   }
@@ -295,7 +295,7 @@ color:#45B5D1;
 }
 
 /* On smaller screens, decrease text size */
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 980px) {
   .desktop {
     display: none;
   }
