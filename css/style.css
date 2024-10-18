@@ -292,16 +292,7 @@ color:#45B5D1;
 
 /* On smaller screens, decrease text size */
 @media screen and (max-width: 667px) {
-  .prev, .next {
+  .desktop {
     display: none;
-  }
-
-  .left, .right {
-    width: 100%;
-    background-color: none;
-  }
-
-  .slide {
-    display: active !important;
   }
 }
