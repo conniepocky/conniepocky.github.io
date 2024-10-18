@@ -290,9 +290,17 @@ color:#45B5D1;
   to {opacity: 1}
 }
 
+.mobile {
+  display: none;
+}
+
 /* On smaller screens, decrease text size */
 @media screen and (max-width: 667px) {
   .desktop {
     display: none;
+  }
+
+  .mobile {
+    display: active;
   }
 }
