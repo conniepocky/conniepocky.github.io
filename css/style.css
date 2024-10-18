@@ -295,12 +295,12 @@ color:#45B5D1;
 }
 
 /* On smaller screens, decrease text size */
-@media screen and (max-width: 667px) {
+@media screen and (max-width: 768px) {
   .desktop {
     display: none;
   }
 
   .mobile {
-    display: active;
+    display: block;
   }
 }
