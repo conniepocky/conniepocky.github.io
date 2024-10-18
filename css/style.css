@@ -301,6 +301,7 @@ color:#45B5D1;
   }
 
   .mobile {
-    display: block;
+    display: flex;
+    overflow: hidden;
   }
 }
