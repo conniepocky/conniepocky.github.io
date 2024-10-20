@@ -12,6 +12,18 @@ function outFunc() {
   popup.innerHTML = "Copy to clipboard";
 }
 
+var mobileSlideContainer = document.getElementsByClassName("mobile")[0];
+
+// print the element
+// console.log(mobileSlideContainer);
+
+// mobileSlideContainer.addEventListener("click", function (ev) {
+//   print("clicked");
+//   if (ev.composedPath()[0] === this) {
+//       // your code here ...
+//   }
+// })
+
 let slideIndex = 1;
 showSlides(slideIndex);
 

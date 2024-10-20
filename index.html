@@ -7,9 +7,9 @@
         <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Nunito">
         <link rel="icon" type="image/x-icon" href="images/favicon.ico">
 
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
 
-        <script src="index.js"></script>
+        <script src="index.js" defer></script>
     </head>
     <body>
 
@@ -124,7 +124,7 @@
                 <a class="next" onclick="plusSlides(1)">❯</a>
                 
             </div>
-            <div class="slideshow-container mobile" ontouchend="plusSlides(1)">
+            <div class="slideshow-container mobile" ontouchstart="plusSlides(1)">
                 <div class="slideMobile fade" style="display: flex; justify-content: center; align-items: center;">
                     <div class="slide_content">
                         <h1 style="color: white; padding: 5px;">Murd<span style="border-bottom: 2px solid #45B5D1;">er At The H</span>ouse</h1>
@@ -136,7 +136,7 @@
 
                         <p style="color: #797979">Tap for next slide.</p>
 
-                        <div style="padding: 5px; display: flex; justify-content: center; align-items: center;">
+                        <div style="padding: 5px; display: flex; justify-content: center; align-items: center; pointer-events: none;">
                             <a class="portfolio-btn" href="https://store.steampowered.com/app/2416630/Murder_At_The_House/">Download Here</a>
                         </div>
                     </div>
@@ -146,12 +146,12 @@
                 <div class="slideMobile fade" style="display: none">
                     <div class="slide_content">
                         <h1 style="color: white; padding: 5px;"><span style="border-bottom: 2px solid #45B5D1;">Blog</span></h1>
-                        <img class="zoom" width="200" height="200" src="images/blog.png"/>
+                        <img class="zoom" width="175" height="175" src="images/blog.png"/>
                         <p style="padding:5px">
                             My personal blog (also developed by me) that I use to publish articles and updates on my programming journey! :)
                         </p>
 
-                        <div style="padding: 5px; display: flex; justify-content: center; align-items: center;">
+                        <div style="padding: 5px; display: flex; justify-content: center; align-items: center; pointer-events: none;">
                             <a class="portfolio-btn" href="blog/index.html">Read Here</a>
                         </div>
                     </div>
