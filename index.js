@@ -12,17 +12,19 @@ function outFunc() {
   popup.innerHTML = "Copy to clipboard";
 }
 
-var mobileSlideContainer = document.getElementsByClassName("mobile")[0];
+var mobileSlideContainer = document.getElementsByClassName("desktop")[0];
 
 // print the element
-// console.log(mobileSlideContainer);
+console.log(mobileSlideContainer);
 
-// mobileSlideContainer.addEventListener("click", function (ev) {
-//   print("clicked");
-//   if (ev.composedPath()[0] === this) {
-//       // your code here ...
-//   }
-// })
+mobileSlideContainer.addEventListener("touchend", function (ev) {
+  // console.log("click")
+  // console.log(ev.target)
+
+  if (ev.target.className != "linkDiv") {
+    plusSlides(1);
+  }
+})
 
 let slideIndex = 1;
 showSlides(slideIndex);
