@@ -17,7 +17,7 @@ var mobileSlideContainer = document.getElementsByClassName("desktop")[0];
 // print the element
 console.log(mobileSlideContainer);
 
-mobileSlideContainer.addEventListener("touchend", function (ev) {
+mobileSlideContainer.addEventListener("touchstart", function (ev) {
   // console.log("click")
   // console.log(ev.target)
 
