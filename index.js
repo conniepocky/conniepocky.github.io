@@ -20,6 +20,7 @@ console.log(mobileSlideContainer);
 mobileSlideContainer.addEventListener("touchstart", function (ev) {
   // console.log("click")
   // console.log(ev.target)
+  alert("touched")
 
   if (ev.target.className != "linkDiv") {
     plusSlides(1);
