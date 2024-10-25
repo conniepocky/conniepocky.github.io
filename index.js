@@ -17,7 +17,7 @@ var mobileSlideContainer = document.getElementsByClassName("mobile")[0];
 // print the element
 // console.log(mobileSlideContainer);
 
-mobileSlideContainer.addEventListener("touchstart", function (ev) {
+mobileSlideContainer.addEventListener("touchend", function (ev) {
 
   if (ev.target.className != "linkDiv") {
     plusSlides(1);
