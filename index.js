@@ -12,15 +12,12 @@ function outFunc() {
   popup.innerHTML = "Copy to clipboard";
 }
 
-var mobileSlideContainer = document.getElementsByClassName("desktop")[0];
+var mobileSlideContainer = document.getElementsByClassName("mobile")[0];
 
 // print the element
 console.log(mobileSlideContainer);
 
 mobileSlideContainer.addEventListener("touchstart", function (ev) {
-  // console.log("click")
-  // console.log(ev.target)
-  alert("touched")
 
   if (ev.target.className != "linkDiv") {
     plusSlides(1);
