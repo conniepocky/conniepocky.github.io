@@ -15,7 +15,7 @@ function outFunc() {
 var mobileSlideContainer = document.getElementsByClassName("mobile")[0];
 
 // print the element
-console.log(mobileSlideContainer);
+// console.log(mobileSlideContainer);
 
 mobileSlideContainer.addEventListener("touchstart", function (ev) {
 
