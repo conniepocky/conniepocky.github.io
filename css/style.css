@@ -11,9 +11,45 @@ section {
   display: inline-block;
   padding: 10%;
   margin: auto;
-
   height: 100%;
 }
+
+.underline {
+  display: inline-block;
+  vertical-align: middle;
+  -webkit-transform: translateZ(0);
+  transform: translateZ(0);
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  -moz-osx-font-smoothing: grayscale;
+  position: relative;
+  overflow: hidden;
+}
+
+.underline:before {
+  content: "";
+  height: 4px;
+  position: absolute;
+  z-index: -1;
+  left: 0;
+  right: 100%;
+  bottom: 0;
+  background: #2098d1;
+  -webkit-transition-property: right;
+  transition-property: right;
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+  -webkit-transition-timing-function: ease-out;
+  transition-timing-function: ease-out;
+}
+
+section:hover .underline:before,
+section:focus .underline:before,
+section:active .underline:before {
+  right: 0;
+}
+
 
 hr {
   height: 1px;
@@ -36,21 +72,22 @@ img {
 /* nav bar */
 
 #navBar {
-list-style-type: none;
-margin: 0;
-overflow: hidden;
+  list-style-type: none;
+  margin: 0;
+  background: #202424;;
+  overflow: hidden;
 }
 
 #navbarli {
-float: right;
+  float: right;
 }
 
 li a {
-display: block;
-color: white;
-padding: 15px;
-text-decoration-color: #45B5D1;
-font-size: 30px;
+  display: block;
+  color: white;
+  padding: 15px;
+  text-decoration-color: #45B5D1;
+  font-size: 30px;
 }
 
 li a:hover {
@@ -60,61 +97,47 @@ background-color: #111;
 /* home css */
 
 #home {
-height: 65vh;
+  height: 65vh;
+  width: 100%;
+  background-color: #202424;
 }
 
 .titleText {
-font-family: 'Nunito';
-font-size: 100px;
-color: #45B5D1;
+  font-family: 'Nunito';
+  font-size: 100px;
+  color: #45B5D1;
 }
 
 .subtitleText {
-font-size: 40px;
-color: white;
+  font-size: 40px;
+  color: white;
 }
 
 .popup {
-position: relative;
-display: inline-block;
-cursor: pointer;
-user-select: none;
+  position: relative;
+  display: inline-block;
+  cursor: pointer;
+  user-select: none;
 }
 
 .popup .popuptext {
-visibility: hidden;
-width: 160px;
-background-color: #555;
-color: #fff;
-text-align: center;
-border-radius: 6px;
-padding: 8px 0;
-position: absolute;
-z-index: 1;
-bottom: 125%;
-left: 50%;
-margin-left: -80px;
+  visibility: hidden;
+  width: 160px;
+  background-color: #555;
+  color: #fff;
+  text-align: center;
+  border-radius: 6px;
+  padding: 8px 0;
+  position: absolute;
+  z-index: 1;
+  bottom: 125%;
+  left: 50%;
+  margin-left: -80px;
 }
 
 .popup:hover .popuptext {
-visibility: visible;
-opacity: 1;
-}
-
-.cursor h1 {
-display: inline;
-align-items: center;
-}
-
-.cursor h1::after {
-content: "";
-width: 50px;
-height: 90px;
-background: #3897AF;
-display: inline-block;
-
-animation: cursor-blink 2s steps(2) infinite;
-
+  visibility: visible;
+  opacity: 1;
 }
 
 @keyframes cursor-blink {
@@ -126,12 +149,16 @@ animation: cursor-blink 2s steps(2) infinite;
 /* about css */
 
 #about {
-background-color: white;
-color: black;
+  background-image: url("../images/computer.jpg");
+  /* background-size: cover; */
+  color: white;
+  background-size: 100% 100%;
+  min-height: 65vh; 
+  
 }
 
 u {
-text-decoration-color: #45B5D1;
+  text-decoration-color: #45B5D1;
 }
 
 #aboutTitle {
@@ -141,15 +168,47 @@ font-size: 50px;
 /* portfolio css */
 
 #portfolio {
-background-image: url("../images/computer.jpg");
-background-size: cover;
+  background-color: white;
+  background-size: 100% 100%;
+  min-height: 65vh; 
+  width: 100%;
+  height: 100%;
+}
 
-width: 100%;
+div.card {
+  width: 250px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  text-align: center;
+  margin: 10px;
+}
+
+div.header {
+  background-color: #61a15d;
+  color: white;
+  padding: 10px;
+  font-size: 40px;
+}
+
+li {
+  font-size: 20px;
+}
+
+div.container {
+  padding: 10px;
+}
+
+div.container p {
+  color: black;
+}
+
+.cardsrow1 {
+  display: flex;
+  flex-flow: row wrap;
 }
 
 #portfolioTitle {
 font-size: 50px;
-color: white;
+color: black;
 }
 
 li .vimhover {
@@ -176,139 +235,4 @@ color: white;
 
 b {
 color:#45B5D1;
-}
-
-/* slideshow css */
-
-.portfolio-btn {
-  background-color: white;
-  color: #45B5D1;
-  padding: 15px;
-  font-size: 20px;
-  justify-content:center !important;
-  align-items:center !important;
-  text-decoration: none;
-
-}
-
-.left {
-  left: 0;
-  width: 50%;
-  height: 100%;
-  float: left;
-  background-color: #111;
-}
-
-.right {
-  right: 0;
-  width: 50%;
-  float:right;
-  height: 100%;
-  background-color: #45B5D1;
-}
-
-.slideMobile {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 100%;
-}
-
-.slide {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 100%;
-}
-
-.slideshow-container {
-  max-width: 80%;
-  border-radius: 5px;
-  box-sizing: border-box;
-  height: 500px;
-  background-color: #202424;
-  position: relative;
-}
-
-.zoom {
-  transition: transform .2s;
-  margin: 0 auto;
-  justify-content: center;
-  align-items: center;
-  display: flex;
-}
-
-.zoom:hover {
-  -ms-transform: scale(1.1); /* IE 9 */
-  -webkit-transform: scale(1.1); /* Safari 3-8 */
-  transform: scale(1.1); 
-}
-
-.slide_content {
-  width: 100%;
-  height: 100%;
-  align-items:normal;
-}
-
-.prev, .next {
-  cursor: pointer;
-  position: absolute;
-  top: 50%;
-  width: auto;
-  padding: 16px;
-  margin-top: -22px;
-  color: white;
-  font-weight: bold;
-  font-size: 18px;
-  transition: 0.6s ease;
-  border-radius: 0 3px 3px 0;
-  user-select: none;
-}
-
-.next {
-  right: 0;
-  border-radius: 3px 0 0 3px;
-}
-
-.prev:hover, .next:hover {
-  background-color: rgba(0,0,0,0.8);
-}
-
-/* Caption text */
-.text {
-  color: #ffffff;
-  font-weight: semi-bold;
-  font-size: 20px;
-  padding: 8px 12px;
-  position: absolute;
-  bottom: 8px;
-  width: 100%;
-  text-align: center;
-}
-
-/* Fading animation */
-.fade {
-  animation-name: fade;
-  animation-duration: 1.5s;
-}
-
-@keyframes fade {
-  from {opacity: .4} 
-  to {opacity: 1}
-}
-
-.mobile {
-  display: none;
-}
-
-/* On smaller screens, decrease text size */
-@media screen and (max-width: 980px) {
-  .desktop {
-    display: none;
-  }
-
-  .mobile {
-    display: flex;
-    overflow: hidden;
-  }
 }

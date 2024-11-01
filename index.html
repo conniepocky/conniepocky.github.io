@@ -7,6 +7,8 @@
         <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Nunito">
         <link rel="icon" type="image/x-icon" href="images/favicon.ico">
 
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
         <script src="index.js" defer></script>
@@ -42,27 +44,25 @@
             <br>
         </section>
 
-        <section id="about">
-            <h1 id="aboutTitle">About <u>Me</u></h1>
+        <section class="tag" id="about">
+            <h1 id="aboutTitle">About <span class="underline">Me</span></h1>
 
             <h3>Hi! My name is Connie, I'm a 16 year old developer, I started learning to code when I was 6 years old, and since then I have developed a love and passion for everything Computer Science. Currently I am studying Maths, Further Maths, Computer Science and Biology A Levels. Aside from programming I also love cats, music, gaming and Harry Potter :-)</h3>
 
-            <h2><u>Languages I use</u></h2>
+            <h2><span class="underline">Languages I use</span></h2>
 
-            <ul>
-                <li>Python</li>
-                <li>C#</li>
-                <li>HTML/CSS</li>
-                <li>Javascript</li>
-                <li>Swift</li>
-                <li>Clojure</li>
-            </ul>
+            <div class="imagesgrid">
+                <img src="images/icons8-python-100.png">
+                <img src="images/icons8-javascript-100.png">
+                <img src="images/icons8-c-sharp-logo-100.png">
+                <img src="images/icons8-swift-100.png">
+                <img src="images/icons8-clojure-100.png">
+            </div>
 
-            <h2><u>Key Skills</u></h2>
+            <h2><span class="underline">Software and Platforms</span></h2>
 
             <ul>
                 <li>Unity</li>
-                <li>Web Development</li>
                 <li>Machine Learning/Data Science</li>
                 <li>iOS App Development</li>
                 <li>
@@ -73,88 +73,46 @@
 
         </section>
 
-        <section id="portfolio">
-            <h1 id="portfolioTitle"><u>Portfolio</u></h1>
+        <section class="tag" id="portfolio">
+            <h1 id="portfolioTitle"><span class="underline">Portfolio</span></h1>
 
-            <div class="slideshow-container desktop">
-                <div class="slide fade" style="display: flex; justify-content: center; align-items: center;">
-                    <div class="slide_content">
-                        <div class="left">
-                            <h1 style="color: white; padding: 20px;">Murd<span style="border-bottom: 2px solid #45B5D1;">er At The H</span>ouse</h1>
-                            <div class="zoom"><img src="images/murderathouselogo.jpg" style="width:80%;"></div>
+            <div class="cardsrow1">
+                <div class="card">
+                    <a href="https://store.steampowered.com/app/2416630/Murder_At_The_House/">
+                        <div style="background-color: black;" class="header">
+                            <img style="object-fit: contain; width: 100%;" src="images/murderatthehouselogo.jpg">
                         </div>
-                        <div class="right">
-                            <p style="padding: 20px;">
-                                In July 2023 I published my first game on steam - Murder At The House. I designed all the graphics myself and programmed it 
-                                entirely in C# using Unity.
-                            </p>
-                            <hr>
-                            <p style="padding: 20px;">Murder At The House is an indie, social-deducation, pixel, murder mystery game. 11 people are trapped in an old abandoned house together, 8 are innocent, one is a detective and the other is the murderer. You, either the detective or an innocent, must interrogate all the suspects and find clues littered around the house till you think you know who the murderer is. However, if you take too long, more innocents may die..
-                            </p>
-
-                            <div class="linkDiv" style="padding: 20px; display: flex; justify-content: center; align-items: center;">
-                                <a class="portfolio-btn" href="https://store.steampowered.com/app/2416630/Murder_At_The_House/">Download Here</a>
-                            </div>
-                        </div>
-                        
+                    </a>
+                  
+                    <div class="container">
+                      <p>Steam Game - Murder At The House</p>
+                      <p>Released July 2023.</p>
                     </div>
-                    <div class="text">1/2</div>
-                </div>
-                
-                <div class="slide fade" style="display: none">
-                    <div class="slide_content">
-                        <div class="left">
-                            <h1 style="color: white; padding: 20px;"><span style="border-bottom: 2px solid #45B5D1;">Blog</span></h1>
-                            <div class="zoom"><img width="200" height="200" src="images/blog.png"/></div>
-                        </div>
-                        <div class="right">
-                            <p style="padding:20px">
-                                My personal blog (also developed by me) that I use to publish articles and updates on my programming journey! :)
-                            </p>
+                  </div>
 
-                            <div class="linkDiv" style="padding: 20px; display: flex; justify-content: center; align-items: center;">
-                                <a class="portfolio-btn" href="blog/index.html">Read Here</a>
-                            </div>
+                  <div class="card">
+                    <a href="https://conniepocky.github.io/blog/index.html">
+                        <div class="header">
+                            <img style="object-fit: contain; width: 70%;" src="images/icons8-blog-100.png">
                         </div>
+                    </a>
+                  
+                    <div class="container">
+                      <p>Blog</p>
                     </div>
-                  <div class="text">2/2</div>
-                </div>
-                
-                <a class="prev" onclick="plusSlides(-1)">❮</a>
-                <a class="next" onclick="plusSlides(1)">❯</a>
-                
-            </div>
-            <div class="slideshow-container mobile">
-                <div class="slideMobile fade" style="display: flex; justify-content: center; align-items: center;">
-                    <div class="slide_content">
-                        <h1 style="color: white; padding: 5px;">Murd<span style="border-bottom: 2px solid #45B5D1;">er At The H</span>ouse</h1>
-                        <img class="zoom" src="images/murderathouselogo.jpg" style="width:50%;">
-                        <p style="padding: 5px;">
-                            In July 2023 I published my first game on steam - Murder At The House. I designed all the graphics myself and programmed it 
-                            entirely in C# using Unity.
-                        </p>
+                  </div>
 
-                        <div class="linkDiv" style="padding: 5px; display: flex; justify-content: center; align-items: center;">
-                            <a class="portfolio-btn" href="https://store.steampowered.com/app/2416630/Murder_At_The_House/">Download Here</a>
+                  <div class="card">
+                    <a href="https://github.com/conniepocky/breast-cancer-tumour-diagnosis">
+                        <div style="background-color: #dd75ea;" class="header">
+                            <img style="object-fit: contain; width: 70%;" src="images/icons8-medical-100.png">
                         </div>
+                    </a>
+                  
+                    <div class="container">
+                      <p>ML Algorithm using K-Means Neighbours to detect breast tumours</p>
                     </div>
-                    <div class="text">1/2</div>
-                </div>
-                
-                <div class="slideMobile fade" style="display: none">
-                    <div class="slide_content">
-                        <h1 style="color: white; padding: 5px;"><span style="border-bottom: 2px solid #45B5D1;">Blog</span></h1>
-                        <img class="zoom" width="175" height="175" src="images/blog.png"/>
-                        <p style="padding:5px">
-                            My personal blog (also developed by me) that I use to publish articles and updates on my programming journey! :)
-                        </p>
-
-                        <div class="linkDiv" style="padding: 5px; display: flex; justify-content: center; align-items: center;">
-                            <a class="portfolio-btn" href="blog/index.html">Read Here</a>
-                        </div>
-                    </div>
-                  <div class="text">2/2</div>
-                </div>
+                  </div>
             </div>
         </section>
 
