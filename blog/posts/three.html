@@ -1,0 +1,85 @@
+<!--DOCTYPE html-->
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="icon" type="image/x-icon" href="../images/favicon.ico">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
+    <title>Welcome!</title>
+    <link rel="stylesheet" href="../css/style.css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/styles/default.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/highlight.min.js"></script>
+
+    <!-- and it's easy to individually load additional languages -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/languages/go.min.js"></script>
+
+    <script>hljs.highlightAll();</script>
+</head>
+<body>
+
+    <section id="blog">
+
+        <div class="blog-heading">
+            <h3>My Blog</h3>
+
+            <h2 style="text-align: center; border-bottom: 2px solid #45B5D1;">Latest Posts</h2>
+        </div>
+
+        <div class="topleft">
+            <a style="color: #45B5D1;" href="../index.html">Back to home</a>
+        </div>
+    
+    </section>
+
+    <div class="post">
+        <h1>Project Euler - Problem 87</h1>
+
+        <p>Hi everyone, in today's blog post I wanted to share how I completed problem 87 from <a style="color: #45B5D1;" href="https://projecteuler.net/problem=87">project euler</a> as I found it really interesting :)</p>
+        
+        <p>I knew in order to do this I would have to have a list of all the prime numbers up to the square root of 50 million, as any number above the square root would be a repeated factor.
+            As I began researching how to solve this problem I came across the ancient greek algorithm the sieve of Eratosthenes. The code works by eliminating the multiples of all prime numbers and marking them as non prime.
+        </p>
+
+        <pre><code class="python">
+            def sieve_of_eratosthenes(limit):
+                is_prime = [True] * (limit + 1)
+                is_prime[0], is_prime[1] = False, False  
+                for start in range(2, int(limit**0.5) + 1):
+                    if is_prime[start]:
+                        for multiple in range(start*start, limit + 1, start):
+                            is_prime[multiple] = False
+                return [num for num, prime in enumerate(is_prime) if prime]
+        </code></pre>
+            
+        <p>Now, the next step was to create 3 loops each of which iterate through the primes and then add the square, cube and fourth power of each to a set sums.</p>
+            
+        <pre><code class="python">
+            for sq in primes:
+                for cu in primes:
+                    if sq**2 + cu**3 >= max:
+                        break
+                    for fo in primes:
+                        sum = sq**2 + cu**3 + fo**4
+                        if sum < max:
+                            sums.add(sum)
+        </code></pre>
+
+
+        <p>The if statement on line 3 ensures the square number + the cube number is not larger than the max value, as if it is then it will be pointless calculating the fourth power number.</p>
+
+        <p>The time complexity of the first function sieve of ertosthenes is O(n log log n), and for the main nested for loops it is O((limit/log(limit)<sup>3</sup>))
+
+        <p>The full code can be viewed on github <a style="color: #45B5D1;" href="https://github.com/conniepocky/project-euler/blob/master/87.py">here</a>, thank you for reading! :)</p>
+    </div>
+
+    <p class="endText" style="padding: 20px;">Made by <b>Connie</b> 😊</p>
+
+</body>
+</html>
+  
