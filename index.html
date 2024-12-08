@@ -23,7 +23,7 @@
 
         <section id="home">
             <span class="cursor">
-                <h1 class="titleText">Hello World</h1>
+                <h1 class="titleText">Hello World<span class="blinking-cursor"></span></h1>
             </span>
     
             <h2 class="subtitleText">I'm Connie - Programmer and Computer Science enthusiast :)</h2>
@@ -75,48 +75,43 @@
 
         </section>
 
-        <section class="tag" id="portfolio">
-            <h1 id="portfolioTitle"><span class="underline">Portfolio</span></h1>
-
-            <div class="cardsrow1">
-                <div class="card">
-                    <a href="https://store.steampowered.com/app/2416630/Murder_At_The_House/">
-                        <div style="background-color: black;" class="header">
-                            <img style="object-fit: contain; width: 100%;" src="images/murderatthehouselogo.jpg">
-                        </div>
-                    </a>
-                  
-                    <div class="container">
-                      <p>Steam Game - Murder At The House</p>
-                      <p>Released July 2023.</p>
+        <div id="portfolio">
+            <h2 id="portfolioTitle"><span class="underline">Portfolio</span></h2>
+            <div class="portfolio-grid">
+                <a href="https://conniepocky.github.io/blog/index.html" target="_blank" style="text-decoration: none;">
+                    <div class="card">
+                      <div class="header">Blog</div>
+                      <div class="container">
+                        <p>My personal blog detailing my programming journey and showing latest projects :)</p>
+                      </div>
                     </div>
-                  </div>
-
-                  <div class="card">
-                    <a href="https://conniepocky.github.io/blog/index.html">
-                        <div class="header">
-                            <img style="object-fit: contain; width: 70%;" src="images/icons8-blog-100.png">
-                        </div>
-                    </a>
-                  
-                    <div class="container">
-                      <p>Blog</p>
+                  </a>
+                  <a href="https://store.steampowered.com/app/2416630/Murder_At_The_House/" target="_blank" style="text-decoration: none;">
+                    <div class="card">
+                      <div class="header">Murder at The House - Steam Game</div>
+                      <div class="container">
+                        <p>My Steam Game, published July 2023. Programmed using C# and Unity.</p>
+                      </div>
                     </div>
-                  </div>
-
-                  <div class="card">
-                    <a href="https://github.com/conniepocky/breast-cancer-tumour-diagnosis">
-                        <div style="background-color: #dd75ea;" class="header">
-                            <img style="object-fit: contain; width: 70%;" src="images/icons8-medical-100.png">
-                        </div>
-                    </a>
-                  
-                    <div class="container">
-                      <p>ML Algorithm using K-Means Neighbours to detect breast tumours</p>
+                  </a>
+                  <a href="https://github.com/conniepocky/breast-cancer-tumour-diagnosis" target="_blank" style="text-decoration: none;">
+                    <div class="card">
+                      <div class="header">ML Algorithm using K-Means Neighbours to detect breast tumours</div>
+                      <div class="container">
+                        <p>ML algorithm using a dataset from Kaggle to classifyy breast tumours as either benign or malignant.</p>
+                      </div>
                     </div>
-                  </div>
+                  </a>
+                  <a href="https://spotify-mbti.onrender.com/" target="_blank" style="text-decoration: none;">
+                    <div class="card">
+                      <div class="header">Spotify MBTI</div>
+                      <div class="container">
+                        <p>Uses your spotify data to get your MBTI personality type.</p>
+                      </div>
+                    </div>
+                  </a>
             </div>
-        </section>
+        </div>          
 
         <br>
 
