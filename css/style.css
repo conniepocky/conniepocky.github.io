@@ -299,7 +299,7 @@ color:#45B5D1;
   #portfolio {
     padding: 20px; 
     min-height: auto; 
-    margin-top: 20px;
+    /* margin-top: 20px; */
   }
 
   #about {
