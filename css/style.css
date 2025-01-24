@@ -275,12 +275,12 @@ color:#45B5D1;
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); 
     gap: 20px;
-    justify-content: center; /* Center the grid in the viewport */
+    justify-content: center;
     max-width: 100%;
   }
   
   .card {
-    max-width: 300px; /* Prevent cards from exceeding their grid cell */
+    max-width: 300px; 
     width: 100%;
     text-align: left;
   }
@@ -291,21 +291,25 @@ color:#45B5D1;
   #home {
     height: 75vh;
   }
+  #portfolio {
+    padding: 20px; 
+    min-height: auto; 
+    margin-top: 20px;
+  }
+
   #about {
     background-image: none;
     background-color: #e3e3e3;
+    padding: 20px; 
   }
-  #portfolio {
-    padding: 5px; /* Further reduce padding */
+
+  .portfolio-grid {
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); 
+    gap: 15px; 
   }
 
   #portfolioTitle {
     font-size: 2rem;
-    margin-bottom: 15px; /* Reduce spacing */
-  }
-
-  .portfolio-grid {
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); /* Smaller cards */
-    gap: 15px; /* Reduce spacing between cards */
+    margin-bottom: 15px; 
   }
 }
