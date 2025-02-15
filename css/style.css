@@ -44,6 +44,15 @@ section {
   transition-timing-function: ease-out;
 }
 
+.imagesgrid {
+  color: black;
+  transition: color 0.3s ease-in-out;
+}
+
+section:hover .imagesgrid {
+  color: #2098d1;
+}
+
 section:hover .underline:before,
 section:focus .underline:before,
 section:active .underline:before {
@@ -293,6 +302,7 @@ color:#45B5D1;
   .titleText {
     font-size: 75px;
   }
+
   #home {
     height: 75vh;
   }
